@@ -30,7 +30,7 @@ logs_path = '/tmp/tensorflow/rnn_words'
 writer = tf.summary.FileWriter(logs_path)
 
 # Text file containing words for training
-training_file = 'belling_the_cat.txt'
+training_file = 'pytorch-yolo-v3/belling_the_cat.txt'
 
 def read_data(fname):
     with open(fname) as f:

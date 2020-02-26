@@ -171,7 +171,7 @@ with tf.Session() as session:
               continue
           try:
               symbols_in_keys = [dictionary[str(words[i])] for i in range(len(words))]
-              for i in range(3):
+              for i in range(2):
                   keys = np.reshape(np.array(symbols_in_keys), [-1, n_input, 1])
                   onehot_pred = session.run(pred, feed_dict={x: keys})
                   onehot_pred_index = int(tf.argmax(onehot_pred, 1).eval())
@@ -183,4 +183,5 @@ with tf.Session() as session:
               f.write(sentence)
             
           except:
-              print("Word not in dictionary")
+             print("Word not in dictionery");
+             print(sentence)

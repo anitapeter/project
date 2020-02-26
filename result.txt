@@ -4,3 +4,4 @@ cow
 cycle 
 girl
 bird
+sofa

@@ -161,8 +161,7 @@ with tf.Session() as session:
     with open('hash.txt', 'w') as f:
     
       while True:
-          prompt = "%s words: " % n_input
-          sentence = input(prompt)
+         
           if(sentence == "~"):
             exit()
           sentence = sentence.strip()

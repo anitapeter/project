@@ -183,5 +183,6 @@ with tf.Session() as session:
               f.write(sentence)
             
           except:
-             print("Word not in dictionery");
+             
              print(sentence)
+             f.write(sentence)

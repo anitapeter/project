@@ -257,7 +257,13 @@ if __name__ ==  '__main__':
             im_id = i*batch_size + im_num
             objs = [classes[int(x[-1])] for x in output if int(x[0]) == im_id]
             print("{0:20s} predicted in {1:6.3f} seconds".format(image.split("/")[-1], (end - start)/batch_size))
-            f.write(listToString(objs))
+           f.write(listToString(objs))
+           
+
+
+
+           
+        
             print(f.read())
             print("----------------------------------------------------------")
         i += 1
@@ -322,6 +328,10 @@ if __name__ ==  '__main__':
     list(map(cv2.imwrite, det_names, orig_ims))
     
     end = time.time()
+    
+    with open("result.txt", "r") as r:
+        with open("result.txt", "w") as w:
+            w.write(r.read(.replace(' ' , '\n'))
     
     print()
     print("SUMMARY")

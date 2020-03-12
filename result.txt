@@ -1,7 +1,10 @@
-cat
-dog
-cow
-cycle 
-girl
-bird
-sofa
+person
+bicycle
+car
+motorbike
+aeroplane
+bus
+train
+truck
+boat
+trafficlight

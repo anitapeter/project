@@ -1,4 +1,4 @@
-from tagsList import Tags
+from tagList import Tags
 
 def getTags(list_of_keywords):
 	tags = Tags['common']
